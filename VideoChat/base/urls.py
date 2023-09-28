@@ -2,7 +2,9 @@ from django.urls import path
 from. import views
 
 urlpatterns=[
-    path('', views.home),
-    path('lobby', views.lobby),
-    path('room/', views.room)
+
+    path('', views.lobby),
+    path('get_token/', views.getToken),
+    path('room/', views.room),
+    path('create_member/', views.createMember),
 ]
